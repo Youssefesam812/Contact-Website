@@ -1,0 +1,40 @@
+.star{
+    position: relative;
+}
+.star::before{
+    content: "";
+    background-color: #2C3E50;
+    width: 80px;
+    height: 4px;
+    position: absolute;
+    right: 35px;
+    top: 68%;
+}
+.star::after{
+    content: "";
+    background-color: #2C3E50;
+    width: 80px;
+    height: 4px;
+    position: absolute;
+    left: 35px;
+    top: 68%;
+}
+.container{
+    width: 50%;
+}
+
+.inputs{
+    border-bottom: 1px solid #e5dfdf;
+    width: 100%;
+    margin-bottom: 45px;
+    padding: 17px 15px;
+    border-radius: 7px;
+}
+.inputs:focus{
+    border-bottom: 1px solid #e5dfdf;
+    outline: none; 
+}
+.inputs::placeholder {
+    color: #595C79; 
+    
+  }

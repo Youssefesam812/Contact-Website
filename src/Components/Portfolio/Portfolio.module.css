@@ -1,0 +1,73 @@
+.star {
+    position: relative;
+  }
+  .star::before {
+    content: "";
+    background-color: #2C3E50;
+    width: 80px;
+    height: 4px;
+    position: absolute;
+    right: 35px;
+    top: 68%;
+  }
+  .star::after {
+    content: "";
+    background-color: #2C3E50;
+    width: 80px;
+    height: 4px;
+    position: absolute;
+    left: 35px;
+    top: 68%;
+  }
+  
+  .container {
+    width: 83%;
+  }
+  
+  .imgport {
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+  }
+  
+  .layer {
+    position: absolute;
+    background-color: #1EBC9C;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    width: 100%;
+    border-radius: 10px;
+    transition: opacity 0.3s;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  .imgportContainer:hover .layer {
+    opacity: 0.9;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .overlay img {
+    max-width: 60%;
+    max-height: 60%; 
+    border-radius: 10px;
+  }
+  
