@@ -11,7 +11,7 @@ import Contact from './Components/Contact.jsx/Contact';
 
 const router = createBrowserRouter([
 
-  {path:"" , element: <Layout /> , children :[
+  {path:"Contact-Website" , element: <Layout /> , children :[
 
     {index:true , element:<Home />},
     {path: "home" , element:<Home />},
