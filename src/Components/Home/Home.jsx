@@ -7,7 +7,7 @@ export default function Home() {
 
       <div className='bg-[#1ABC9C] flex flex-col items-center text-white py-20'>
         <div className='w-64'>
-        <img src={avatar} alt="Avatar" className='w-full' />
+        <img src={`${process.env.PUBLIC_URL}/assets/images/avataaars.svg`} alt="Avatar" className="w-full" />
         </div>
         <h2 className='text-4xl font-bold mt-10'>START FRAMEWORK</h2>
         <div className={home.star}>
